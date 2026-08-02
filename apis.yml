@@ -1,8 +1,28 @@
 aid: westwing
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/westwing.png
 name: Westwing
-description: 'Westwing is a company surfaced as a portfolio company of hv-capital, point-nine and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Westwing is Europe's number one "Beautiful Living" e-commerce company, present
+  in more than 20 European countries. It is a premium one-stop Home & Living
+  destination that offers design lovers a carefully curated selection of the best
+  design brands alongside its own Westwing Collection, created by an in-house team
+  in Munich, spanning furniture, sofas, lighting, beds, rugs, textiles, outdoor
+  and home accessories. Westwing (Westwing Group SE) is a publicly listed company
+  and was surfaced in the API Evangelist network as a portfolio company of HV
+  Capital and Point Nine. It publishes no public developer API; its primary
+  machine-facing surface is a root-level /llms.txt policy that governs how LLMs
+  and agents may use its catalog and editorial content.
 url: https://raw.githubusercontent.com/api-evangelist/westwing/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- E-commerce
+- Home & Living
+- Furniture
+- Interior Design
+- Retail
+- Europe
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +50,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/westwing-domain-security.yml
 - type: Website
   url: https://www.westwing.de
+- type: LLMsTxt
+  url: llms/westwing-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of https://www.westwing.de/.well-known/*
+host: https://www.westwing.de
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Westwing publishes no /.well-known discovery documents. It does publish a
+  root-level /llms.txt (captured at llms/westwing-llms.txt) governing LLM use of
+  its e-commerce content. No public developer/API host exists (developer.westwing.*
+  and api.westwing.de do not resolve). Absence of well-known documents is valid,
+  expected data for a B2C retailer with no public API.
